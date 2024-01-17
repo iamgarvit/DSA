@@ -5,7 +5,7 @@ double returns(double yearly_amount,double yearly_interest,int time,double invt)
     if(time==1)
         return yearly_amount*(1+(yearly_interest/100));
     else
-        return returns((yearly_amount*(1+(yearly_interest/100)))+invt,yearly_interest,time-1,invt);
+        return returns((yearly_amount*(1+(yearly_interest/100)))+invt,yearly_interest,time-1,invt*1.03);
 }
 
 int main(){
